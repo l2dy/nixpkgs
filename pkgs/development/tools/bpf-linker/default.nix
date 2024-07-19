@@ -2,7 +2,7 @@
 , stdenv
 , rustPlatform
 , fetchFromGitHub
-, llvmPackages_18
+, llvmPackages_git
 , zlib
 , ncurses
 , libxml2
@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
 
   buildNoDefaultFeatures = true;
 
-  nativeBuildInputs = [ llvmPackages_18.llvm ];
+  nativeBuildInputs = [ llvmPackages_git.llvm ];
   buildInputs = [ zlib ncurses libxml2 ];
 
   # fails with: couldn't find crate `core` with expected target triple bpfel-unknown-none
