@@ -59,6 +59,10 @@ let
     "node-tree-sitter"
     # this is the python language bindings, tree-sitter-python is the grammar
     "py-tree-sitter"
+    # this is the java language bindings, tree-sitter-java is the grammar
+    "java-tree-sitter"
+    # this is the kotlin language bindings, tree-sitter-kotlin is the grammar
+    "kotlin-tree-sitter"
     # afl fuzzing for tree sitter
     "afl-tree-sitter"
     # archived
